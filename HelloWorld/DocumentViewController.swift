@@ -9,6 +9,8 @@ import UIKit
 
 class DocumentViewController: UIViewController {
     
+    @IBOutlet var HelloWorldLabel: UILabel!
+    @IBOutlet var textShow: UIButton!
     @IBOutlet weak var documentNameLabel: UILabel!
     
     var document: UIDocument?
@@ -31,5 +33,7 @@ class DocumentViewController: UIViewController {
         dismiss(animated: true) {
             self.document?.close(completionHandler: nil)
         }
+    }
+    @IBAction func showTextButtonPress() {
     }
 }
