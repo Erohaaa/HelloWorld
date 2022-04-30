@@ -58,8 +58,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="HelloWorldLabel" destination="gIC-pK-eFG" id="93u-Ar-VhA"/>
-                        <outlet property="ShowTextButton" destination="EZq-Y0-hPG" id="6MZ-6d-ZLN"/>
+                        <outlet property="helloWorldLabel1" destination="gIC-pK-eFG" id="93u-Ar-VhA"/>
                         <outlet property="textShow" destination="EZq-Y0-hPG" id="fiQ-E8-Xs3"/>
                     </connections>
                 </viewController>

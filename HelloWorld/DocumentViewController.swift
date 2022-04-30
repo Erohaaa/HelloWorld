@@ -9,7 +9,7 @@ import UIKit
 
 class DocumentViewController: UIViewController {
     
-    @IBOutlet var HelloWorldLabel: UILabel!
+    @IBOutlet var helloWorldLabel1: UILabel!
     @IBOutlet var textShow: UIButton!
     @IBOutlet weak var documentNameLabel: UILabel!
     
