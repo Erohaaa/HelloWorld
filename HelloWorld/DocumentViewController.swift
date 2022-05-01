@@ -10,10 +10,18 @@ import UIKit
 class DocumentViewController: UIViewController {
     
     @IBOutlet var helloWorldLabel1: UILabel!
-    @IBOutlet var textShow: UIButton!
+    @IBOutlet var showText: UIButton!
+    @IBOutlet var go2svc: UIButton!
     @IBOutlet weak var documentNameLabel: UILabel!
     
     var document: UIDocument?
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        helloWorldLabel1.isHidden =  true
+        showText.layer.cornerRadius = 15
+        go2svc.layer.cornerRadius = 15
+    }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -34,6 +42,14 @@ class DocumentViewController: UIViewController {
             self.document?.close(completionHandler: nil)
         }
     }
+    
     @IBAction func showTextButtonPress() {
+        if helloWorldLabel1.isHidden {
+            helloWorldLabel1.isHidden = false
+            showText.setTitle("Hide Text", for: .normal )
+        } else {
+            helloWorldLabel1.isHidden = true
+            showText.setTitle("SHOW", for: .normal)
+        }
     }
 }
